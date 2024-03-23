@@ -1,0 +1,1578 @@
+<!DOCTYPE html><html lang="it" dir="ltr" data-scrapbook-source="https://tv.esshubx.click/n7qk4vDS?buyer=serz187&amp;utm_creative=7&amp;utm_campaign=New+Leads+Campaign&amp;utm_source=fb&amp;utm_placement=Facebook_Desktop_Feed&amp;campaign_id=120207129504840552&amp;adset_id=120207380676130552&amp;ad_id=120207380676120552&amp;adset_name=GR%2FCY+sustav-7&amp;creative_name=%7B%7Bcreative.name%7D%7D&amp;fbp=984377889508525&amp;fertino=0#0#1#0#1#0#1" data-scrapbook-create="20240320161806605" data-scrapbook-title="ΑΛΛΑΓΗ ΖΩΗΣ: Έλληνας φοιτητής της ιατρικής εφηύρε ένα μοναδικό προϊόν, χάρη στο οποίο είναι δυνατό να εξαλειφθούν πλήρως τα προβλήματα των αρθρώσεων! Χωρίς χειρουργείο!"><head><base>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+      ΑΛΛΑΓΗ ΖΩΗΣ: Έλληνας φοιτητής της ιατρικής εφηύρε ένα μοναδικό προϊόν, χάρη στο οποίο είναι δυνατό να εξαλειφθούν
+      πλήρως τα προβλήματα των αρθρώσεων! Χωρίς χειρουργείο!
+    </title>
+
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="doors.css">
+
+    <script src="jquery.js"></script>
+
+    <script>
+      var monthNames = [
+        'Ιανουάριος',
+        'Φεβρουάριος',
+        'Μάρτιος',
+        'Απρίλιος',
+        'Ενδέχεται',
+        'Ιούνιος',
+        'Ιούλιος',
+        'Αύγουστος',
+        'Σεπτέμβριος',
+        'Οκτώβριος',
+        'Νοέμβριος',
+        'Δεκέμβριος'
+      ]
+
+      function printDate(d) {
+        var t = new Date(d)
+        t.setFullYear(t.getFullYear())
+        document.write(t.getDate() + ' ' + monthNames[t.getMonth()] + ', ' + t.getFullYear())
+      }
+
+      function getCurrentMonth(d) {
+        var t = new Date(d)
+        document.write(monthNames[t.getMonth()])
+      }
+
+      function getCurrAndPrevMonth(d) {
+        var t = new Date(d)
+        document.write(monthNames[t.getMonth() - 1] + ', ' + monthNames[t.getMonth()])
+      }
+    </script>
+
+    <script src="dr-dtime.js"></script>
+
+    <script>
+      function fdateTwoDigits(d) {
+        let now = new Date()
+        now.setDate(now.getDate() + d)
+        let mm = now.getMonth() + 1
+        let day = now.getDate()
+        if (now.getDate() < 10) day = '0' + now.getDate()
+        if (mm < 10) mm = '0' + mm
+        document.write(' ' + day + '.' + mm + '.' + now.getFullYear() + ' ')
+      }
+    </script>
+    <script>
+      function fdate(d) {
+        var now = new Date()
+        now.setDate(now.getDate() + d)
+        document.write(now.getFullYear())
+      }
+    </script>
+    <script>
+  (function() {
+    var defaultBuyer = "adastra";
+
+    var showcaseParamName = "vitrina";
+    var showcaseParamValue = "0";
+
+    var paramsToForward = [
+      "utm_creative",
+      "utm_campaign",
+      "utm_source",
+      "utm_placement",
+      "campaign_id",
+      "adset_id",
+      "adset_name",
+      "fbp",
+    ]
+
+    var Depth = 2;
+    var ReloadStreamUUID = "605b6099-d099-4608-9ecf-203848dbd6ad";
+    var backlink = makeUrl();
+
+    var redFlag = false,
+      disabled = false;
+
+    disabled = document.cookie.indexOf("DisableBackfix") !== -1;
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll("form").forEach(function(value) {
+        value.addEventListener("submit", function() {
+          disabled = true;
+          document.cookie =
+            "DisableBackfix=1;expires=" +
+            new Date(Date.now() + 60 * 5 * 1000).toGMTString();
+        });
+      });
+    });
+
+    if (
+      document.readyState === "complete" ||
+      document.readyState === "loaded" ||
+      document.readyState === "interactive"
+    ) {
+      brave();
+    } else {
+      document.addEventListener("DOMContentLoaded", brave);
+    }
+
+    function brave() {
+      window.back_url = null;
+
+      if (disabled === true) {
+        return;
+      }
+
+      var links = document.getElementsByTagName("a");
+
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", function() {
+          redFlag = true;
+        });
+      }
+
+      backInFrame(backlink);
+    }
+
+    function makeUrl() {
+      var currentUrl = new URL(location.href)
+
+      var resultingUrl = new URL(location.href)
+      resultingUrl.search = ''
+    
+      paramsToForward.forEach(function (name) {
+        var value = currentUrl.searchParams.get(name)
+
+        if (value === null || value === undefined) {
+          return
+        }
+
+        resultingUrl.searchParams.set(name, value)
+      })
+
+      resultingUrl.searchParams.set(showcaseParamName, showcaseParamValue)
+
+      return resultingUrl.toString()
+    }
+
+    function backInFrame(backLink) {
+      var frame = document.createElement("iframe");
+      frame.style.width = "100%";
+      frame.id = "frame";
+      frame.name = "frame";
+      frame.style.height = "100vh";
+      frame.style.position = "fixed";
+      frame.style.top = 0;
+      frame.style.left = 0;
+      frame.style.border = "none";
+      frame.style.zIndex = 999997;
+      frame.style.display = "none";
+      frame.style.backgroundColor = "#fff";
+      frame.setAttribute("src", backLink);
+
+      for (var t = 0; Depth > t; ++t)
+        window.history.pushState({}, "", window.location.href + "#" + t);
+
+      if (!isIos()) {
+        checkUserGesture(function() {
+          for (var t = 0; Depth > t; ++t)
+            window.history.pushState({}, "", window.location.href + "#" + t);
+        });
+      }
+
+      document.body.append(frame);
+
+      window.onpopstate = function(t) {
+        setTimeout(function() {
+          if (redFlag === true) {
+            redFlag = false;
+            return;
+          }
+
+          if (disabled === true) {
+            history.go(-Depth);
+            return;
+          }
+
+          if (getUrlVar("frame") === 1 || isInIframe()) return;
+
+          if (!isIos() && !!!t.state) return;
+
+          document.body.style.overflow = "hidden";
+          frame.style.display = "block";
+          document.querySelectorAll("body > *:not(#frame)").forEach(function(e) {
+            e.setAttribute("style", "display:none;");
+          });
+        }, 10);
+      };
+    }
+
+    function getUrlVar(key) {
+      var p = window.location.search;
+      p = p.match(new RegExp("[?&]{1}(?:" + key + "=([^&$#=]+))"));
+      return p ? p[1] : "";
+    }
+
+    function isInIframe() {
+      try {
+        return (
+          window != window.top ||
+          document != top.document ||
+          self.location != top.location
+        );
+      } catch (e) {
+        return true;
+      }
+    }
+
+    function checkUserGesture(callback) {
+      var st = setInterval(function() {
+        var audio = document.createElement("audio");
+        var playPromise = audio.play();
+        if (playPromise instanceof Promise) {
+          if (!audio.paused) {
+            clearInterval(st);
+            callback();
+          }
+          playPromise.then(function(e) {}).catch(function(error) {});
+        } else {
+          if (!audio.paused) {
+            clearInterval(st);
+            callback();
+          }
+        }
+      }, 100);
+    }
+
+    function isIos() {
+      return (
+        [
+          "iPad Simulator",
+          "iPhone Simulator",
+          "iPod Simulator",
+          "iPad",
+          "iPhone",
+          "iPod",
+          "Macintosh",
+          "MacIntel",
+          "MacPPC",
+          "Mac68K",
+          "Mac68K",
+        ].indexOf(navigator.platform) !== -1
+      );
+    }
+  })(window);
+</script>
+  </head>
+
+  <body>
+    <!--! HEADER -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header-top">
+            <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;" class="header-top__mobile-icon">
+              <img width="23" height="24" src="burger.svg" alt="burger">
+            </a>
+            <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;" class="header-top__logo">
+              <img src="logo.svg" alt="logo" width="260" height="51">
+            </a>
+            <ul class="header-top__social">
+              <li>
+                <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                    <g id="Group_758" data-name="Group 758" transform="translate(-798 -238)">
+                      <g id="Ellipse_22" data-name="Ellipse 22" transform="translate(798 238)" fill="#fff" stroke="#fff" stroke-width="1">
+                        <circle cx="20" cy="20" r="20" stroke="none"></circle>
+                        <circle cx="20" cy="20" r="19.5" fill="none"></circle>
+                      </g>
+                      <path id="Path_85" data-name="Path 85" d="M32.478,36.75a3.141,3.141,0,0,0-2.21-2.225C28.318,34,20.5,34,20.5,34s-7.818,0-9.767.526a3.141,3.141,0,0,0-2.21,2.225,35.365,35.365,0,0,0,0,12.113,3.141,3.141,0,0,0,2.21,2.225c1.95.526,9.767.526,9.767.526s7.818,0,9.767-.526a3.141,3.141,0,0,0,2.21-2.225,35.365,35.365,0,0,0,0-12.113ZM17.943,46.524V39.09l6.534,3.717Z" transform="translate(797.5 215)" fill="#004071"></path>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                    <g id="Group_759" data-name="Group 759" transform="translate(-259 -674)">
+                      <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(259 674)" fill="#fff" stroke="#fff" stroke-width="1">
+                        <circle cx="20" cy="20" r="20" stroke="none"></circle>
+                        <circle cx="20" cy="20" r="19.5" fill="none"></circle>
+                      </g>
+                      <path id="Path_9" data-name="Path 9" d="M66.648,46.789H62.062V35.4H58.22V30.939h3.825V27.666c0-3.8,2.324-5.877,5.728-5.877a31.144,31.144,0,0,1,3.431.176v3.969H68.845c-1.841,0-2.2.878-2.2,2.164v2.841h4.414L70.49,35.4H66.648Z" transform="translate(214.288 659.711)" fill="#004071"></path>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                    <g id="Group_763" data-name="Group 763" transform="translate(-918 -238)">
+                      <circle id="Ellipse_47" data-name="Ellipse 47" cx="16.5" cy="16.5" r="16.5" transform="translate(922 242)" fill="#004071"></circle>
+                      <g id="Group_33" data-name="Group 33" transform="translate(606 -436)">
+                        <g id="Group_760" data-name="Group 760">
+                          <path id="Path_7" data-name="Path 7" d="M40,20A20,20,0,1,1,20,0,19.994,19.994,0,0,1,40,20ZM16.34,30.55A13.628,13.628,0,0,0,30.06,16.83c0-.21,0-.42-.01-.62a9.879,9.879,0,0,0,2.41-2.5,9.787,9.787,0,0,1-2.77.76,4.819,4.819,0,0,0,2.12-2.67,9.765,9.765,0,0,1-3.06,1.17,4.825,4.825,0,0,0-8.34,3.3,4.419,4.419,0,0,0,.13,1.1,13.679,13.679,0,0,1-9.94-5.04,4.82,4.82,0,0,0,1.5,6.43,4.737,4.737,0,0,1-2.18-.6v.06a4.827,4.827,0,0,0,3.87,4.73,4.807,4.807,0,0,1-1.27.17,4.6,4.6,0,0,1-.91-.09,4.815,4.815,0,0,0,4.5,3.35,9.693,9.693,0,0,1-5.99,2.06,8.769,8.769,0,0,1-1.15-.07,13.435,13.435,0,0,0,7.37,2.18" transform="translate(312 674)" fill="#fff"></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                    <g id="Group_761" data-name="Group 761" transform="translate(-978 -238)">
+                      <circle id="Ellipse_23" data-name="Ellipse 23" cx="20" cy="20" r="20" transform="translate(978 238)" fill="#fff"></circle>
+                      <path id="Path_88" data-name="Path 88" d="M862.046,434.775a9.172,9.172,0,0,1-.581,3.034,6.392,6.392,0,0,1-3.656,3.656,9.172,9.172,0,0,1-3.034.581c-1.333.061-1.759.075-5.154.075s-3.821-.014-5.154-.075a9.172,9.172,0,0,1-3.034-.581,6.392,6.392,0,0,1-3.656-3.656,9.17,9.17,0,0,1-.581-3.034c-.061-1.333-.075-1.759-.075-5.154s.014-3.821.075-5.154a9.17,9.17,0,0,1,.581-3.034,6.392,6.392,0,0,1,3.656-3.656,9.171,9.171,0,0,1,3.034-.581c1.333-.061,1.759-.075,5.154-.075s3.82.014,5.154.075a9.171,9.171,0,0,1,3.034.581,6.392,6.392,0,0,1,3.656,3.656,9.172,9.172,0,0,1,.581,3.034c.061,1.333.075,1.759.075,5.154s-.014,3.821-.075,5.154Zm-2.235-10.212a6.926,6.926,0,0,0-.431-2.325A4.146,4.146,0,0,0,857,419.862a6.926,6.926,0,0,0-2.325-.431c-1.32-.06-1.716-.073-5.059-.073s-3.739.013-5.059.073a6.927,6.927,0,0,0-2.325.431,4.146,4.146,0,0,0-2.376,2.376,6.927,6.927,0,0,0-.431,2.325c-.06,1.32-.073,1.716-.073,5.059s.013,3.739.073,5.059a6.927,6.927,0,0,0,.431,2.325,4.146,4.146,0,0,0,2.376,2.376,6.927,6.927,0,0,0,2.325.431c1.32.06,1.716.073,5.059.073s3.739-.013,5.059-.073A6.927,6.927,0,0,0,857,439.38,4.146,4.146,0,0,0,859.38,437a6.926,6.926,0,0,0,.431-2.325c.06-1.32.073-1.716.073-5.059s-.013-3.739-.073-5.059Zm-10.19,11.474a6.415,6.415,0,1,1,6.415-6.415,6.415,6.415,0,0,1-6.415,6.415Zm0-10.593a4.178,4.178,0,1,0,4.178,4.178,4.178,4.178,0,0,0-4.178-4.178Zm6.661-.986a1.5,1.5,0,1,1,1.5-1.5,1.5,1.5,0,0,1-1.5,1.5Z" transform="translate(148.879 -172.121)" fill="#004071"></path>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">
+                  <svg version="1.1" class="latestnews" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 28.2 46.3" style="enable-background: new 0 0 28.2 46.3" xml:space="preserve">
+                    <style type="text/css">
+                      .st0 {
+                        fill: #004071;
+                      }
+                    </style>
+                    <g id="Group_778" transform="translate(-366.771 31.579) rotate(-7)">
+                      <g id="Group_777" transform="translate(342 -11)">
+                        <path id="Line_2" class="st0" d="M49,47.5c-0.1,0-0.2,0-0.4,0l-21-3c-1.4-0.2-2.3-1.5-2.1-2.8c0.2-1.4,1.5-2.3,2.8-2.1l0,0l21,3c1.4,0.2,2.3,1.5,2.1,2.8C51.3,46.6,50.2,47.5,49,47.5z"></path>
+                        <path id="Line_18" class="st0" d="M28,36.5c-1.2,0-2.2-0.9-2.5-2c-0.3-1.4,0.6-2.7,2-2.9l0,0l21-4c1.4-0.3,2.7,0.6,2.9,2l0,0c0.3,1.4-0.6,2.7-2,2.9l0,0l-21,4C28.3,36.5,28.2,36.5,28,36.5z"></path>
+                        <path id="Line_51" class="st0" d="M28,44.5c-1.4,0-2.5-1.1-2.5-2.5l0-8c0-1.4,1.1-2.5,2.5-2.5c1.4,0,2.5,1.1,2.5,2.5l0,8C30.5,43.4,29.4,44.5,28,44.5z"></path>
+                        <path id="Line_52" class="st0" d="M49,47.5c-1.4,0-2.5-1.1-2.5-2.5l0-15c0-1.4,1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5l0,15C51.5,46.4,50.4,47.5,49,47.5z"></path>
+                        <path id="Line_53" class="st0" d="M31,49.5c-1.4,0-2.5-1.1-2.5-2.5v-3c0-1.4,1.1-2.5,2.5-2.5c1.4,0,2.5,1.1,2.5,2.5v3C33.5,48.4,32.4,49.5,31,49.5z"></path>
+                        <path id="Line_54" class="st0" d="M39,50.5c-1.4,0-2.5-1.1-2.5-2.5v-3c0-1.4,1.1-2.5,2.5-2.5c1.4,0,2.5,1.1,2.5,2.5v3C41.5,49.4,40.4,50.5,39,50.5z"></path>
+                        <path id="Line_55" class="st0" d="M39,50.5c-0.1,0-0.2,0-0.3,0l-8-1c-1.4-0.2-2.3-1.4-2.2-2.8c0.2-1.4,1.4-2.3,2.8-2.2l0,0l8,1c1.4,0.2,2.3,1.4,2.2,2.8C41.3,49.6,40.3,50.5,39,50.5z"></path>
+                      </g>
+                    </g>
+                    <g>
+                      <path class="st0" d="M1.2,46.3c-0.1,0-0.2,0-0.2-0.1c0-0.1-0.1-0.2-0.1-0.5V30.6C0.9,30.2,1,30,1.2,30h1.7c0.2,0,0.3,0.1,0.4,0.4l3.8,10.3c0,0.1,0,0,0.1,0l0-0.1v-10c0-0.4,0.1-0.6,0.3-0.6h1.4c0.2,0,0.3,0.2,0.3,0.6v15.2c0,0.2,0,0.4-0.1,0.4c0,0.1-0.1,0.1-0.2,0.1H7.7c-0.1,0-0.2,0-0.2-0.1c-0.1-0.1-0.2-0.2-0.2-0.3L2.9,34.7c0-0.1-0.1,0-0.1,0.1c0,0,0,0,0,0.1v10.9c0,0.2,0,0.4-0.1,0.5c0,0.1-0.1,0.1-0.2,0.1H1.2z"></path>
+                      <path class="st0" d="M12.1,46.3c-0.1,0-0.2,0-0.2-0.1c0-0.1-0.1-0.2-0.1-0.4V30.5c0-0.2,0-0.3,0.1-0.4c0-0.1,0.1-0.1,0.2-0.1h6c0.1,0,0.1,0,0.1,0c0,0,0.1,0.1,0.1,0.1c0,0.1,0,0.2,0,0.3v0.9c0,0.2,0,0.3-0.1,0.4c0,0.1-0.1,0.1-0.2,0.1h-3.9c-0.1,0-0.1,0.1-0.1,0.4v4.6c0,0.1,0,0.1,0,0.2c0,0.1,0.1,0.1,0.1,0.1h3.1c0.2,0,0.3,0.2,0.3,0.5v0.9c0,0.3-0.1,0.5-0.3,0.5h-3.1c0,0-0.1,0-0.1,0.1c0,0.1,0,0.2,0,0.2v5.2h4.1c0.1,0,0.1,0,0.2,0c0,0,0.1,0.1,0.1,0.1c0,0.1,0,0.2,0,0.3v0.9c0,0.2,0,0.3-0.1,0.4c0,0.1-0.1,0.1-0.2,0.1H12.1z"></path>
+                      <path class="st0" d="M19.8,46.3c-0.1,0-0.2-0.1-0.2-0.3v-0.2c0-0.1,0-0.2,0-0.2l2.6-15c0.1-0.4,0.2-0.6,0.4-0.6h2.3c0.2,0,0.3,0.2,0.4,0.6l2.5,15c0,0,0,0.1,0,0.1c0,0.1,0,0.1,0,0.2c0,0,0,0.1,0,0.1c0,0.2-0.1,0.3-0.2,0.3h-1.9c-0.2,0-0.3-0.2-0.4-0.5L25,43c0-0.2-0.1-0.3-0.1-0.3h-2.7c-0.1,0-0.1,0.1-0.1,0.3l-0.5,2.9c0,0.2-0.1,0.3-0.1,0.4c0,0.1-0.1,0.1-0.2,0.1H19.8z M22.5,41.3h2.3c0.1,0,0.1-0.1,0.1-0.2c0,0,0-0.1,0-0.1l-1.1-8.8c0-0.1,0-0.1,0-0.1c0,0,0,0,0,0.1L22.3,41c0,0.1,0,0.1,0,0.1C22.3,41.2,22.4,41.3,22.5,41.3z"></path>
+                    </g>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="header__menu">
+            <li>
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Πολιτική</a>
+            </li>
+            <li>
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Οικονομία</a>
+            </li>
+            <li>
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ελλάδα</a>
+            </li>
+            <li>
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Κόσμος</a>
+            </li>
+            <li>
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Αθλητισμός</a>
+            </li>
+            <li>
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ψυχαγωγία</a>
+            </li>
+            <li>
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Food &amp; Drink</a>
+            </li>
+            <li>
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Travel</a>
+            </li>
+            <li>
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Viral</a>
+            </li>
+            <li>
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;"></a>
+            </li>
+            <li>
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Videos</a>
+            </li>
+          </ul>
+          <div class="header__news">
+            <div class="header__news-title">BREAKING NEWS:</div>
+            <div class="animation">
+              <ul class="header__news-list">
+                <li>
+                  <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">«Απριλοδεκέμβριο» προβλέπει ο Μαρουσάκης: Βροχές και καταιγίδες μέχρι την Πέμπτη και μετά...
+                    Άνοιξη</a>
+                </li>
+                <li>
+                  <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Σοκαριστικό τροχαίο στην Ταϊλάνδη: Λεωφορείο έπεσε σε δέντρο - Τουλάχιστον 14 νεκροί και εικόνες
+                    πανικού</a>
+                </li>
+                <li>
+                  <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">«Προσοχή με τα κινητά σας»: Μήνυμα - προειδοποίηση της ΕΥΠ σε υπουργούς και στελέχη της
+                    κυβέρνησης</a>
+                </li>
+                <li>
+                  <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Επίσκεψη Ερντογάν στην Αθήνα: Για μεγάλες προσδοκίες και ευρύ φάσμα θεμάτων μιλούν τα τουρκικά
+                    ΜΜΕ</a>
+                </li>
+                <li>
+                  <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Έφυγε από τη ζωή ξαφνικά ο διευθυντής του Aeolos TV, Χρήστος Βαλασέλλης - Βρέθηκε νεκρός στο σπίτι
+                    του</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="header__trending">
+            <img src="trending.webp" alt="trending" width="18" height="18">
+            <div class="header__trending-title">
+              δημοφιλές τώρα:
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">
+                Πνιγμός 6χρονης στην Κόρινθο: «Ο πατέρας γνώριζε ότι ήταν πνιγμένη κάτω από τη βάρκα» - Καταπέλτης ο...
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--! FIN HEADER -->
+
+    <div class="wrapper">
+      <div class="content">
+        <div class="current-category">ΥΓΕΊΑ</div>
+        <h2 class="title">
+          ΑΛΛΑΓΗ ΖΩΗΣ: Έλληνας φοιτητής της ιατρικής εφηύρε ένα μοναδικό προϊόν, χάρη στο οποίο είναι δυνατό να
+          εξαλειφθούν πλήρως τα προβλήματα των αρθρώσεων! Χωρίς χειρουργείο!
+        </h2>
+
+        <div class="post-date">
+          <script type="text/javascript">
+            printDate(new Date())
+          </script>20 Μάρτιος, 2024
+        </div>
+        <div class="categories">
+          <ul>
+            <li class="current">ΥΓΕΊΑ</li>
+            <li>ΣΥΜΠΛΗΡΩΜΑΤΑ ΔΙΑΤΡΟΦΗΣ</li>
+            <li>ΒΙΤΑΜΙΝΕΣ</li>
+            <li>ΠΌΝΟΣ ΣΤΙΣ ΑΡΘΡΏΣΕΙΣ</li>
+            <li>ΥΓΙΕΙΣ ΑΡΘΡΩΣΕΙΣ</li>
+          </ul>
+        </div>
+        <img src="1.webp" width="540" height="296" class="image horizontal">
+        <p>Δεν είναι όλα πριν και μετά;</p>
+        <p>Αυτός είναι ο Λεόντειος Κουντούρη, ο κορυφαίος φοιτητής ιατρικής στο Πανεπιστήμιο της Αθήνας.</p>
+        <p>Κατάφερε να απαλλαγεί εντελώς από προβλήματα στις αρθρώσεις! Χωρίς χειρουργείο!</p>
+        <p>
+          Η ιατρική του ειδικότητα είναι η ρευματολογία. Και ενώ εργαζόταν για τη διδακτορική του διατριβή, συνάντησε
+          μια νέα μέθοδο θεραπείας των αρθρώσεων που κανείς δεν είχε ακούσει ποτέ πριν.
+        </p>
+        <p>
+          Για να βεβαιωθεί ότι δεν ήταν απλώς κάτι τυχαίο, ζήτησε από τη θεία του Ζήνα Μαρκίδη να δοκιμάσει αυτή τη
+          μέθοδο.
+        </p>
+        <img src="2.webp" width="540" height="205" class="image horizontal">
+        <p>Η Ζήνα απαλλάχθηκε από την επώδυνη αρθρίτιδα σε 7 ημέρες.</p>
+        <p>Ο γείτονας του ο Λευτέρη Μιχαϊλίδη δοκίμασε επίσης αυτή τη νέα ολοκληρωμένη θεραπεία:</p>
+        <img src="3.webp" width="540" height="229" class="image horizontal">
+        <p>Ο Μιχαϊλίδης κατάφερε να θεραπεύσει την οστεοαρθρίτιδα του γόνατος δεύτερου βαθμού σε 10 ημέρες.</p>
+        <p>Και ένας από τους συμμετέχοντες στην έρευνα της διατριβής του, ο Θησέας, πέτυχε εξαιρετικά αποτελέσματα:</p>
+        <img loading="lazy" src="4.webp" class="image horizontal">
+        <p>Ο Θησέας θεράπευσε το πρησμένο γόνατό του χάρη στη μέθοδο του Λεόντειου.</p>
+        <p>Ακόμη και οι καθηγητές και οι δάσκαλοι του Λεόντειου συγκλονίστηκαν από τη νέα του μέθοδο.</p>
+        <img loading="lazy" src="5.webp" class="image horizontal">
+        <p>Στη σκηνή ενώπιον της επιστημονικής κοινότητας δήλωσε:</p>
+        <p>
+          «Μπορώ να κάνω οποιονδήποτε να δει παρόμοια αποτελέσματα. Αν υποφέρετε από πόνο στις αρθρώσεις... ΜΠΟΡΕΙΤΕ να
+          ανακάμψετε πλήρως. Δεν απαιτείται χειρουργική επέμβαση ή άλλες επεμβάσεις. Χάρη σε αυτό το μοναδικό μέσο».
+        </p>
+        <p>Οι καθηγητές του και οι συνάδελφοί τους έπαθαν σοκ. Τους φαινόταν όλα ψεύτικα.</p>
+        <p>Αλλά ο Λεόντειος τους απέδειξε ότι έκαναν λάθος.</p>
+        <p>Ας μιλήσουμε λεπτομερώς για τη θεραπεία που εφεύρεσε ο Λεόντειος.</p>
+        <h1>Πώς κατάφερε ο Λεόντειος να κάνει αυτή την ανακάλυψη;</h1>
+        <p>
+          Ο Λεόντειος ανακάλυψε αυτήν την επαναστατική λύση για τον πόνο στις αρθρώσεις κατά τη διάρκεια του δεύτερου
+          έτους του στο Ιατρικό Πανεπιστήμιο της Αθήνας.
+        </p>
+        <p>
+          Λόγω κληρονομικών προβλημάτων στις αρθρώσεις, που επιδεινώθηκαν λόγω σκληρών σπουδών και έλλειψης χρημάτων για
+          τις απαραίτητες θεραπείες, υπέφερε όλο και περισσότερο από πόνους στα πόδια. Σαν μελλοντικός ρευματολόγος,
+          ήθελε να εφεύρει ένα προϊόν που θα βοηθούσε τον εαυτό του και όλους τους ανθρώπους με παθήσεις των αρθρώσεων.
+        </p>
+        <img loading="lazy" src="6.webp" class="image vertical">
+        <p>Λόγω του ότι βρισκόταν σε αναπηρικό καροτσάκι, η προσωπική του ζωή πήγε επίσης στραβά ...</p>
+        <p>
+          «Μια μέρα έψαχνε για υλικά για τις σπουδές του στο τμήμα σπάνιων βιβλίων της βιβλιοθήκης του πανεπιστημίου.
+        </p>
+        <p>
+          Βρήκε ένα παλιό βιβλίο που περιέγραφε μια ενδιαφέρουσα, αλλά ήδη ξεχασμένη έρευνα «Μέθοδος αποκατάστασης και
+          θεραπείας των αρθρώσεων».
+        </p>
+        <img loading="lazy" src="7.webp" class="image horizontal">
+        <p>Όντας σε αναπηρικό καροτσάκι, ο Λεόντειος ήξερε ότι έπρεπε να κάνει κάτι γι' αυτό».</p>
+        <h1>Μια νέα μέθοδος θεραπείας των αρθρώσεων</h1>
+        <p>Έπρεπε να εφαρμόσει αυτή τη νέα μέθοδο θεραπείας των αρθρώσεων.</p>
+        <p>
+          Αρχικά, προσπάθησε να δημιουργήσει το απαραίτητο προϊόν από αυτοσχέδια μέσα, αναμειγνύοντας θειικά άλατα και
+          βιταμίνες. Αλλά, δυστυχώς, το αποτέλεσμα δεν ήταν το αναμενόμενο και χωρίς ειδικό εξοπλισμό ήταν δύσκολο και
+          πολύ ακριβό.
+        </p>
+        <img loading="lazy" src="8.webp" class="image horizontal">
+        <p>Όμως κινούνταν προς τη σωστή κατεύθυνση και αυτή η μέθοδος βρισκόταν στη διαδικασία ανάπτυξης.</p>
+        <p>
+          Ευτυχώς, απέκτησε πρόσβαση στο εργαστήριο της ιατρικής σχολής της Αθήνας, το οποίο του επέτρεψε να
+          πειραματιστεί με αυτή τη μέθοδο.
+        </p>
+        <p>Η μέθοδος αποκατάστασης των αρθρώσεων ήταν απλή, το εργαστήριο είχε όλα τα απαραίτητα συστατικά.</p>
+        <p>Μετά από μήνες δοκιμών και σφαλμάτων...</p>
+        <p>...Ο Λεόντειος κατάφερε να συνδυάσει τον τέλειο συνδυασμό συστατικών.</p>
+        <p>Όλα αυτά ήταν απαραίτητα για να δοκιμάσετε αυτή τη μέθοδο θεραπείας των αρθρώσεων.</p>
+        <p>
+          Ο Λεόντειος δοκίμασε την έρευνά του στον εαυτό του. Μετά την πρώτη μέρα της θεραπείας, ένιωθε καλύτερα. Το
+          προϊόν έχει αρχίσει να δίνει εκπληκτικά αποτελέσματα
+        </p>
+        <p>Τη δεύτερη μέρα μπόρεσε να σταθεί μόνος του χωρίς υποστήριξη.</p>
+        <p>Μια εβδομάδα αργότερα περπάτησε 20 μέτρα μόνος του.</p>
+        <p>Και τελικά, μετά από 14 μέρες, άρχισε να τρέχει στο γήπεδο και επέστρεψε στο σκι.</p>
+        <img loading="lazy" src="9.webp" class="image vertical">
+        <p>Σε μόλις 14 ημέρες, αποκατέστησε πλήρως τις αρθρώσεις του.</p>
+        <h1>Πώς λειτουργεί αυτή η μέθοδος θεραπείας των αρθρώσεων;</h1>
+        <p>Στο σώμα μας υπάρχει μια ουσία - η γλυκοζαμίνη, είναι αυτή που συμβάλλει στην υγεία των αρθρώσεων.</p>
+        <p>
+          Η γλυκοζαμίνη είναι ένα δομικό υλικό για χόνδρους, τένοντες, συνδέσμους. Αυτό το συστατικό αυξάνει την
+          ελαστικότητα των αρθρώσεων, μειώνει την περαιτέρω καταστροφή του χόνδρου, αυξάνει την κινητικότητα και
+          ανακουφίζει από τα συμπτώματα του πόνου.
+        </p>
+        <img loading="lazy" src="10.webp" class="image horizontal">
+        <p>
+          Η μέθοδός μου βελτιώνει τη σύνθεση της γλυκοζαμίνης, βοηθά στην καλύτερη και ταχύτερη αφομοίωση αυτής της
+          ουσίας. Όλα αυτά οδηγούν σε μείωση των όρων αποκατάστασης του χόνδρινου ιστού και κατά συνέπεια του αρθρικού
+          ιστού.
+        </p>
+        <p>
+          Η έρευνα που βρήκα στο βιβλίο αφορούσε πρώιμα πειράματα από τη δεκαετία του 1980. Ένας ασθενής που πέρασε από
+          τη θεραπεία της νέας άρθρωσης κατάφερε να απαλλαγεί από τον πόνο και το τσούξιμο σε 10 ημέρες.
+        </p>
+        <p>«Όμως η επιστημονική κοινότητα εκείνης της εποχής ήταν φοβισμένη, δεν ήταν έτοιμη για τέτοια επιτεύγματα.</p>
+        <p>Φοβούμενοι την ευθύνη, το πείραμα καλύφθηκε και σύντομα ξεχάστηκε».</p>
+        <p>Αλλά τώρα και εσείς μπορείτε να θεραπεύσετε τις αρθρώσεις σας μέσα σε λίγες μόνο ημέρες.</p>
+        <h1>... Τι να κάνετε εάν υπάρχουν προχωρημένα προβλήματα στις αρθρώσεις;</h1>
+        <p>Μην ανησυχείτε.</p>
+        <p>
+          Ακόμα κι αν έχετε μεγάλα προβλήματα στις αρθρώσεις. Ακόμα κι αν έχετε ήδη περάσει πολλά χρόνια για τη θεραπεία
+          τους.
+        </p>
+        <p>Μια νέα μέθοδος θεραπείας των αρθρώσεων μπορεί εύκολα να το αντιμετωπίσει αυτό.</p>
+        <p>Πάρτε, για παράδειγμα, τον 62χρονο Ρένο.</p>
+        <p>
+          Τα τελευταία 5 χρόνια, παλεύει με πρήξιμο και πόνο στο γόνατό του. Αλλά αφού δοκιμάσαμε τη μέθοδό μας. μπορεί
+          να κάνει ποδήλατο, να περπατήσει πολύ και να ανέβει σκάλες.
+        </p>
+        <p>Και ταυτόχρονα ξέχασε όλες τις ταλαιπωρίες του.</p>
+        <p>Δείτε πώς ο Ρένος οδηγεί το ποδήλατό του:</p>
+        <img loading="lazy" src="11.webp" class="image horizontal">
+        <p>Μετά είναι η Φωτεινή, 50 χρονών, που έχει 3 εγγόνια και θέλει να περνά περισσότερο χρόνο μαζί τους.</p>
+        <p>
+          Σε μόλις 7 ημέρες κατάφερε να θεραπεύσει το κάτω μέρος της πλάτης της. Και τώρα, υγιής και χαρούμενη, παίζει
+          με τα εγγόνια της.
+        </p>
+        <img loading="lazy" src="12.webp" class="image horizontal">
+        <p>Και μετά είναι ο Λάζαρος, 49 χρονών,, του οποίου οι αρθρώσεις άρχισαν να τον ενοχλούν μετά από 40 χρόνια.</p>
+        <p>
+          Δεν θα πιστέψετε! Αλλά αφού ακολούθησε την κοινή μέθοδο θεραπείας μας, θυμήθηκε πώς ήταν να παίζεις ξανά
+          ποδόσφαιρο.
+        </p>
+        <img loading="lazy" src="13.webp" class="image horizontal">
+        <p>
+          Φανταστείτε ότι μπορείτε να περπατήσετε ξανά πολύ, να αθληθείτε, να ανεβείτε σκάλες και να μην χρειάζεστε
+          βοήθεια από άλλους. Ή πώς είναι να νιώθετε τόσο υγιής όσο όταν ήσαστε νέος.
+        </p>
+        <p>
+          Μια νέα μέθοδος θεραπείας των αρθρώσεων μπορεί να κάνει όλα τα όνειρά σας για μια δραστήρια ζωή
+          πραγματικότητα.
+        </p>
+        <h1>Για τα προβλήματα των αρθρώσεων δεν φταίτε εσείς</h1>
+        <p>
+          Ο Λεόντειος πάντα αναρωτιόταν γιατί ο καθηγητής του επιμένει σε πιθανά επικίνδυνα και ακριβά φάρμακα και
+          θεραπείες.
+        </p>
+        <p>Καθώς εμβάθυνε την έρευνα του, ανακάλυψε συγκλονιστικά νέα.</p>
+        <p>
+          Η φαρμακευτική μαφία και οι ρευματολόγοι σε όλο τον κόσμο κρύβουν την ύπαρξη καλύτερων θεραπειών όσο μπορούν,
+          επειδή είναι πιο κερδοφόρο να πουλάς ένα προϊόν που δίνει προσωρινή ανακούφιση αλλά δεν θεραπεύει εντελώς!
+        </p>
+        <p>Αλλά τώρα...</p>
+        <h1>Αυτή είναι η τελευταία θεραπεία που θα χρειαστείτε.</h1>
+        <p>Δεν θα χρειαστείτε ξανά κρέμα αρθρώσεων, ένεση ή χειρουργική επέμβαση.</p>
+        <p>Πώς κι έτσι;</p>
+        <p>
+          Όταν ο Λεόντειος έμαθε για αυτή τη νέα θεραπεία αρθρώσεων, έπρεπε να βρει κάποιον τρόπο ώστε οι άνθρωποι να τη
+          χρησιμοποιούν στην καθημερινή τους ζωή.
+        </p>
+        <p>Η έρευνά του τον οδήγησε στην ανακάλυψη ενός μυστικού συστατικού.</p>
+        <p>Αυτό το συστατικό καθιστά τη νέα μέθοδο θεραπείας των αρθρώσεων διαθέσιμη στο ευρύ κοινό.</p>
+        <p>Και μπορεί να βοηθήσει στη θεραπεία των αρθρώσεων σας!</p>
+        <div class="graph_block">
+          <p class="table-title"><b>% των ατόμων ανάκτησαν</b></p>
+          <ul class="label">
+            <li>- Άτομα που χρησιμοποιούν παραδοσιακές μεθόδους θεραπείας των αρθρώσεων</li>
+            <li>- Εθελοντές που δοκίμασαν τη νέα μέθοδο θεραπείας των αρθρώσεων</li>
+          </ul>
+          <img loading="lazy" src="14.webp" class="image horizontal">
+        </div>
+        <p>Δεν θα έχετε μόνο βραχυπρόθεσμα αποτελέσματα.</p>
+        <p>Και αν αναρωτιέστε πού θα βρείτε αυτό το προϊόν...</p>
+        <p>
+          ...δεν θα βρείτε ποτέ <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">τо Ostyhealth</a> στα καταστήματα γιατί ο Λεόντειος μόλις ολοκλήρωσε
+          την ανάπτυξη αυτής της φόρμουλας. Αυτός είναι ο λόγος που ο γιατρός σας πιθανότατα δεν σας έχει αναφέρει αυτή
+          τη κρέμα ποτέ πριν.
+        </p>
+        <p>Από εδώ και στο εξής, μπορείτε να κάνετε μόνο μια δραστήρια ζωή.</p>
+        <p>Ο Λεόντειος και η ομάδα του μόλις δημιούργησαν τις πρώτες παρτίδες αυτής της κρέμας.</p>
+        <p>Αλλά καλύτερα να βιαστείτε γιατί αυτό το νέο απόθεμα εξαντλείται ΓΡΗΓΟΡΑ:</p>
+        <img loading="lazy" src="15.webp" class="image horizontal">
+        <p>Φανταστείκατε αν θα μπορούσατε να πάρετε αυτή τη κρέμα πριν τελειώσει η τρέχουσα παρτίδα;</p>
+        <p>Μπορεί να ξεχάσετε τι είναι ο πόνος στις αρθρώσεις και τα κινητικά προβλήματα.</p>
+        <p>Μπορείτε να ασχοληθείτε με οποιοδήποτε είδος έντονης δραστηριότητας σε οποιαδήποτε ηλικία</p>
+        <p>...και μην ανησυχείτε για τον πόνο στις αρθρώσεις.</p>
+        <p>Και θα είστε πιο ευτυχισμένοι!</p>
+        <p>Γιατί όμως ο Λεόντειος θέλει να παράγει αυτήν την κρέμα;</p>
+        <h1>Ο Λεόντειος θέλει και άλλοι άνθρωποι να είναι το ίδιο επιτυχημένοι</h1>
+        <p>
+          Θέλει απλώς να βοηθήσει τους ανθρώπους να θεραπευτούν σαν αυτόν. Αυτός είναι ο στόχος της ζωής του ως
+          μελλοντικός γιατρός που ειδικεύεται στη θεραπεία των αρθρώσεων.
+        </p>
+        <p>Έπρεπε να βρει κάτι που θα λειτουργούσε για το υπόλοιπο της ζωής του.</p>
+        <p>Σύντομα και εσείς θα δείτε τα αποτελέσματα της θεραπείας που δεν έχετε ξαναδεί.</p>
+        <p>Καμία επέμβαση.</p>
+        <p>Χωρίς σπρέι ή ακριβές ενέσεις.</p>
+        <p>Απλά φανταστείτε να μην αισθάνεστε πόνο και να κινείστε χωρίς ενόχληση.</p>
+        <h1>Ποιά είναι τα συστατικά της κρέμας αυτής;</h1>
+        <img loading="lazy" src="16.webp" class="image horizontal">
+        <p>Ονομάζονται βιταμίνες Ε και Β3.</p>
+        <p>
+          Βοηθούν στην καλύτερη και ταχύτερη αφομοίωση της γλυκοζαμίνης, την οποία παίρνουμε από τα τρόφιμα, για την
+          αποκατάσταση των αρθρώσεων.
+        </p>
+        <p>Στον ιστό του χόνδρου, η γλυκοζαμίνη μετατρέπεται σε ουσίες απαραίτητες για τις αρθρώσεις.</p>
+        <p>Οι βιταμίνες Ε και Β3 έχουν θετική επίδραση σε ολόκληρο το σώμα.</p>
+        <p>
+          Οι βιταμίνες Ε και Β3 όχι μόνο βελτιώνουν την απορρόφηση της γλυκοζαμίνης αλλά αυξάνουν και την ποσότητα της
+          στον οργανισμό.
+        </p>
+        <p>Αυτό βοηθά το σώμα να έχει πάντα τη σωστή ποσότητα ουσιών για την υγεία των αρθρώσεων.</p>
+        <p>...και ποιό είναι το καλύτερο;</p>
+        <p>Για να έχετε εξαιρετικά αποτελέσματα, δεν χρειάζεται να αγοράσετε ακριβά σπρέι ή να κάνετε επεμβάσεις.</p>
+        <p>Δείτε αυτό το τεστ που έγινε σε δύο ασθενείς.</p>
+        <p>
+          Ο Λεόντειος έβαλε μια γυναίκα να χρησιμοποιήσει ένα σπρέι φαρμακείου για ένα μήνα και μια άλλη γυναίκα
+          χρησιμοποίησε την κρέμα Ostyhealth με βιταμίνες Ε και Β3.
+        </p>
+        <p>Μια γυναίκα που υποβλήθηκε σε θεραπεία με σπρέι φαρμακείου δεν απαλλάχθηκε από τον πόνο:</p>
+        <img loading="lazy" src="17.webp" class="image horizontal">
+        <p>Ωστόσο, η γυναίκα που χρησιμοποίησε την κρέμα Ostyhealth…</p>
+        <p>... θεράπευσε πλήρως την αρθρίτιδα της</p>
+        <img loading="lazy" src="18.webp" class="image horizontal">
+        <p>Ένας από τους λίγους καθηγητές του που αναγνώρισαν τα επιτεύγματα του Λεόντειου είπε:</p>
+        <img loading="lazy" src="19.webp" class="image horizontal">
+        <p>
+          «Αυτή η κρέμα Ostyhealth είναι επαναστατική. Εύχρηστη. Και έχετε τα πιο γρήγορα αποτελέσματα θεραπείας χωρίς
+          χειρουργική επέμβαση και ακριβά σπρέι. Δεν υπάρχουν επίσης παρενέργειες. Συνιστάται."
+        </p>
+        <p>Πείτε αντίο στα φαρμακευτικά σπρέι, τη θεραπεία, τις ενέσεις και τις χειρουργικές επεμβάσεις...</p>
+        <p>...πιο χαρούμενη, ευκολότερη θεραπεία είναι πλέον διαθέσιμη.</p>
+        <p>Ίσως όμως αναρωτιέστε πώς να το κάνετε αυτό στην καθημερινότητά σας.</p>
+        <p>Είναι απλό!</p>
+        <p>Γιατί…</p>
+        <h1>Αυτός είναι ο ευκολότερος τρόπος για τη θεραπεία των αρθρώσεων</h1>
+        <p>Γιατί αυτός είναι ο ευκολότερος τρόπος για να θεραπεύσετε τις αρθρώσεις;</p>
+        <p>
+          Απλώς χρησιμοποιήστε την κρέμα δύο ή τρεις φορές την ημέρα. Και εσείς, επίσης, θα θεραπευθείτε σε περίπου 2
+          εβδομάδες!
+        </p>
+        <p>Δεν χρειάζεται χειρουργείο και ακριβά σπρέι!</p>
+        <p>Χωρίς επώδυνες ενέσεις.</p>
+        <p>Καμία εξουθενωτική θεραπεία.</p>
+        <p>Δεν το πιστεύετε;</p>
+        <p>Δείτε πώς η Λένια θεράπευσε τα γόνατά της σε 7 ημέρες:</p>
+        <img loading="lazy" src="20.webp" class="image horizontal">
+        <p>
+          Είπε: «Για πολύ καιρό είχα έντονο πόνο στην άρθρωση του αριστερού γόνατος. Για αυτό ακριβώς το λόγο, υπήρχαν
+          δυσκολίες στην κίνηση. Πήγα σε ειδικό, διαγνώστηκα με οίδημα στο αριστερό μηριαίο οστό. Μου πρότειναν να
+          κάνουν μια επέμβαση στο γόνατο, αλλά φοβόμουν πολύ τη διαδικασία γιατί θα έπρεπε να μου βάλουν βελόνες στο
+          σώμα μου. Ευτυχώς, γνώρισα τον Λεόντειο και άρχισα να χρησιμοποιώ <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">την Ostyhealth</a> την
+          ώρα που έπρεπε. Μετά από 3 ημέρες ο πόνος εξαφανίστηκε εντελώς και μια εβδομάδα αργότερα περπατούσα ήδη χωρίς
+          πόνο και ξεκίνησα το σκανδιναβικό περπάτημα ακολουθώντας τη μόδα. Η φωτογραφία δείχνει το αποτέλεσμα της
+          προόδου μου.”
+        </p>
+        <p>Και εδώ είναι τα αποτελέσματα της Ostyhealth μετά από 10 ημέρες:</p>
+        <img loading="lazy" src="21.webp" class="image horizontal">
+        <p>
+          Είπε: «.Είχα μια ιστορία με διογκώνεις στη φτέρνα μου. Δεν έχω δοκιμάσει τίποτε... Και αποτάθηκα σε έναν
+          ειδικό, χρησιμοποίησα αλοιφές και εφάρμοσα λαϊκές θεραπείες ... Τίποτα δεν βοήθησε. Εμπιστεύτηκα τον Λεόντειο,
+          πήρα μέρος στο πείραμα. Μετά από 2 εβδομάδες, δεν υπήρχε ίχνος εξογκωμάτων στις φτέρνες μου! Εδώ είναι το
+          αποτέλεσμα μου. Σε ευχαριστώ Λεόντειε!»
+        </p>
+        <p>
+          Φανταστείτε ότι μπορείτε να απολαύσετε τη ζωή χωρίς πόνο. Και μην εκτίθεστε σε επεμβάσεις, θεραπείες,
+          ενέσεις...
+        </p>
+        <p>... σε έναν ενεργό τρόπο ζωής.</p>
+        <p>Βήματα, βόλτες, ποδηλασία: μπορείτε να τα κάνετε όλα.</p>
+        <p>Επειδή έχετε υγιείς αρθρώσεις.</p>
+        <img loading="lazy" src="22.webp" class="image horizontal">
+        <p>Έτσι, η γρήγορη αποκατάσταση των αρθρώσεων είναι εξαιρετική.</p>
+        <h1>Υπάρχει όμως κίνδυνος να επιστρέψει ο πόνος;</h1>
+        <p>Όχι, δεν υπάρχει κίνδυνος επανεμφάνισης προβλημάτων στις αρθρώσεις.</p>
+        <p>
+          Η Έλενα παλεύει με σπασμένες αρθρώσεις εδώ και αρκετά χρόνια. Και χρησιμοποιούσε κάθε είδους αλοιφές και έκανε
+          διάφορες θεραπείες.
+        </p>
+        <p>Τίποτα δεν μπορούσε να θεραπεύσει τις αρθρώσεις της.</p>
+        <p>
+          Ωστόσο, όταν συμμετείχε στα πειράματα του Λεόντειου, κατάφερε να θεραπεύσει τις αρθρώσεις της σε 5 ημέρες και
+          κατάφερε να κολυμπήσει ξανά:
+        </p>
+        <img loading="lazy" src="23.webp" class="image horizontal">
+        <p>Και μετά από 6 μήνες.</p>
+        <p>Η Έλενα έχει ήδη ξεχάσει τι είναι το τρίξιμο στις αρθρώσεις και η δυσφορία.</p>
+        <p>
+          Ο Γεώργιος, ένας άλλος από τους εθελοντές που δοκίμασαν το προϊόν του Λεόντειου, απάντησε 2 εβδομάδες μετά τη
+          θεραπεία:
+        </p>
+        <p>
+          «Αφού γιάτρεψα τις αρθρώσεις μου, δεν έχω αλλάξει τίποτα εδώ και 6 μήνες. Και μάντεψε τι? Ο πόνος στις
+          αρθρώσεις μου δεν έχει επιστρέψει!».
+        </p>
+        <p>Εδώ είναι μια φωτογραφία του Γεώργιου:</p>
+        <img loading="lazy" src="24.webp" class="image horizontal">
+        <p>Μάλλον αναρωτιέστε…</p>
+        <h1>Είναι ασφαλισμένη η κρέμαα Ostyhealth;</h1>
+        <p>
+          Н Ostyhealth είναι πολύ ασφαλισμένη καθώς περιέχει καλά ερευνημένες βιταμίνες που ανακάλυψε ο Λεόντειος στην
+          έρευνά του.
+        </p>
+        <p>Χωρίς παρενέργειες.</p>
+        <p>Και δείτε τι είχαν να πουν ορισμένοι από αυτούς τους ασθενείς:</p>
+        <img loading="lazy" src="25.webp" class="image vertical">
+        <p>
+          «Ήμουν δύσπιστος για την κρέμα Ostyhealth… γιατί τα παραδοσιακά προϊόντα με έκαναν να νιώθω άβολα. Αλλά το
+          σώμα μου απορρόφησε καλά το προϊόν και μπόρεσα να ανακτήσω τις αρθρώσεις μου μέσα σε μια εβδομάδα.»<br>
+          - Ροδούλα, Αθήνα
+        </p>
+        <img loading="lazy" src="26.webp" class="image horizontal">
+        <p>
+          «Н κρέμα Ostyhealth με βοήθησε να απαλλαγώ από τους πόνους και τους πόνους στο σώμα μου και δεν είχα
+          παρενέργειες».<br>
+          - Βίκτωρας, Θεσσαλονίκη
+        </p>
+        <p>
+          Έτσι, εάν εξακολουθείτε να αμφιβάλλετε για το αν πρέπει να χρησιμοποιήσετε την κρέμα Ostyhealth, δεν έχετε
+          τίποτα να ανησυχείτε.
+        </p>
+        <p>Φανταστείτε να έχετε υγιείς αρθρώσεις χωρίς καμία προσπάθεια.</p>
+        <p>Το μεγάλο ερώτημα λοιπόν…</p>
+        <h1>Πώς να αγοράσετε την κρέμα Ostyhealth;</h1>
+        <p>Λοιπόν, σήμερα είναι η τυχερή σας μέρα!</p>
+        <p>
+          Ο Λεόντειος έλαβε τελικά την έγκριση από την ομάδα του και τους επενδυτές για να κυκλοφορήσει αυτή την κρέμα
+          Ostyhealth στο κοινό.
+        </p>
+        <p>Кρέμα <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> :</p>
+        <img loading="lazy" src="product.webp" style="max-width: 150px" class="prod-img">
+        <p>
+          Κάθε πακέτο <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> περιέχει ακριβώς τη σωστή ποσότητα βιταμινών Ε και Β3 για να
+          θεραπεύσει τις αρθρώσεις σας.
+        </p>
+        <p>
+          Η ομάδα του Λεόντειου έχει επενδύσει εκατομμύρια δολάρια στη διανομή του <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> .
+        </p>
+        <p>Η κρέμα αυτή κοστίζει περίπου 78€.</p>
+        <p>Αλλά δεν είναι αυτή η τιμή που θα πληρώσετε για μια συσκευασία <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> σήμερα.</p>
+        <p>Θα φτάσουμε στην πραγματική τιμή σε ένα δευτερόλεπτο, αλλά πρώτα...</p>
+        <h1>Τι λένε οι άνθρωποι για <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">την Ostyhealth</a> ;</h1>
+        <img loading="lazy" src="27.webp" class="image horizontal">
+        <p>
+          «Άκουσα για τις επιτυχημένες δοκιμές του Λεόντειου, αλλά σκέφτηκα ότι ήταν πολύ καλό για να είναι αληθινό.
+          Λοιπόν… 5 μέρες αργότερα, ο πόνος στις αρθρώσεις μου έφυγε! Ο Θεός να ευλογεί όλους όσους δημιούργησαν
+          <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">την Ostyhealth</a> .»<br>
+          - Μαρία, Καλαμάτα
+        </p>
+        <img loading="lazy" src="28.webp" class="image horizontal">
+        <p>
+          ".Πρέπει να δοκιμάσουμε! Θεράπευσα την οστεοαρθρίτιδα σε 5 ημέρες.»<br>
+          -Βασιλική, Πειραιάς.
+        </p>
+        <img loading="lazy" src="29.webp" class="image horizontal">
+        <p>
+          «Είχα προβλήματα στις αρθρώσεις όλη μου τη ζωή. Ούτε οι ακριβές κρέμες ούτε οι ενέσεις με ανακουφίσαν ποτέ. Σε
+          7 μέρες θεράπευσα επιτέλους τις αρθρώσεις μου. Απλώς χρησιμοποιούσα την κρέμα δύο φορές την ημέρα. Είναι απλό.
+          Σε ευχαριστώ Λεόντειε!»<br>
+          - Ιωσήφ,Τρίκκαλα.
+        </p>
+        <img loading="lazy" src="30.webp" class="image horizontal">
+        <p>
+          «Σοκαρίστηκα όταν ο φίλος μου μου σύστησε <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">την Ostyhealth</a> . Σε 10 μέρες κατάφερα να
+          απαλλαγώ από την ουρική αρθρίτιδα. Ήταν καταπληκτικό." <br>- Σοφία, Πειραιάς
+        </p>
+        <img loading="lazy" src="31.webp" class="image horizontal">
+        <p>
+          «.Έχω απαλλαγεί από την οστεοαρθρίτιδα της άρθρωσης του ισχίου 2ου βαθμού σε 2 εβδομάδες! Σταμάτησα να υποφέρω
+          όταν άρχισα να χρησιμοποιώ <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">την Ostyhealth</a> . Την συνιστώ ανεπιφύλακτα."<br>
+          - Βέρα, Ηράκλειο
+        </p>
+        <h1>Ο Λεόντειος έκανε όλη αυτή τη σκληρή δουλειά γιατί νοιάζεται</h1>
+        <p>Καταλαβαίνει τι σημαίνει να έχεις προβλήματα στις αρθρώσεις.</p>
+        <p>
+          Και τώρα που έχει την τέλεια φόρμουλα θεραπείας, θέλει όσο το δυνατόν περισσότεροι ανθρώποι να αποκτήσουν το
+          προϊόν <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> .
+        </p>
+        <p>
+          Είναι αλήθεια, οι επενδυτές του Λεόντειου δεν θέλουν πραγματικά να το κάνει αυτό, αλλά ο Λεόντειος θέλει απλώς
+          να βοηθήσει τους ανθρώπους να θεραπευθούν…
+        </p>
+        <p>...όπως θεράπευσε τις αρθρώσεις του σε 5 μέρες.</p>
+        <p>
+          Αντί να πληρώσει 78 € για μια κρέμα <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> , ο Λεόντειος ξεκίνησε μια προσφορά
+          περιορισμένου χρόνου.
+        </p>
+        <p>
+          Τώρα διεξάγει έναν διαγωνισμό στον οποίο μπορείτε να συμμετάσχετε και να κερδίσετε έκπτωση 50% στην
+          <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> .
+        </p>
+        <p>Τώρα, αν εξακολουθείτε να αμφιβάλλετε...</p>
+        <h1>Τι έχετε να χάσετε;</h1>
+        <p>Έχετε 2 επιλογές.</p>
+        <p>Еπιλογή αρ. 1... αποφασίζετε ότι το προϊόν <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> δεν είναι για εσάς.</p>
+        <p>
+          Μπορείτε να αφήσετε αυτή τη σελίδα και να συνεχίσετε τη ζωή σας. Και μένεις με τον ίδιο πόνο που φέρνει
+          δυσφορία. Και ονειρευτείτε τις υγιείς αρθρώσεις σας.
+        </p>
+        <p>Δεν υπάρχει κανένα λάθος.</p>
+        <p>
+          Ή… επιλογή #2… μπορείτε να πάρετε τον έλεγχο της ζωής σας και να πάρετε μια κρέμα
+          <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> …
+        </p>
+        <p>... και θεραπεύστε τις αρθρώσεις σας σε 7 ημέρες.</p>
+        <p>Η επιλογή είναι δική σας!</p>
+        <p>
+          Εάν είστε έτοιμοι να γίνετε καλά σήμερα, κάντε κλικ στο παρακάτω κουμπί και κερδίστε έκπτωση 50% σε μια κρέμα
+          <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> !
+        </p>
+        <div class="coupon">
+          <span> Περιορισμένη προσφορά για τους αναγνώστες μας. </span>
+        </div>
+        <p class="claim-now">(Λάβετε τη θεραπεία που ολοκληρώνει την παρτίδα προώθησης)</p>
+        <p class="note">
+          Σημείωση: Ο Λεόντειος και οι ασθενείς του χρησιμοποίησαν την κρέμα Ostyhealth για να θεραπεύσουν τις αρθρώσεις
+          τους.
+        </p>
+        <div class="stock-update">
+          <img loading="lazy" src="checkmark.webp">
+          <p>
+            <b>Ενημέρωση αποθέματος Ostyhealth:</b>Οι συσκευασίες της κρέμας Ostyhealth εξακολουθούν να είναι διαθέσιμα
+            από την
+            <b>
+              <script>
+                fdateTwoDigits(0)
+              </script> 20.03.2024 
+            </b>
+          </p>
+        </div>
+        <span id="goToForm"></span>
+        <center class="red_roulete">
+          <span id="goToForm"></span>
+          <div id="form-block">
+            <h3 class="door__head">
+              Λάβετε μέρος στην προσφορά και κερδίστε έως και 50% έκπτωση στην αγορά της Ostyhealth.
+            </h3>
+            <div class="door__wrapper">
+              <h2 class="door__title">ΜΑΝΤΕΨΕ ΠΙΣΩ ΑΠΟ ΠΟΙΑ ΠΟΡΤΑ ΥΠΑΡΧΕΙ ΕΚΠΤΩΣΗ 50%.</h2>
+              <div class="door__container">
+                <div class="door_box">
+                  <div class="hi">
+                    <p id="door__sales2" class="door__sales"></p>
+                  </div>
+                  <div id="door__2" class="door"></div>
+                </div>
+
+                <div class="door_box">
+                  <div class="hi">
+                    <p id="door__sales1" class="door__sales"></p>
+                  </div>
+                  <div id="door__1" class="door"></div>
+                </div>
+
+                <div class="door_box">
+                  <div class="hi">
+                    <p id="door__sales3" class="door__sales"></p>
+                  </div>
+                  <div id="door__3" class="door"></div>
+                </div>
+              </div>
+            </div>
+
+            <div id="order">
+              <div class="form">
+                <div class="img">
+                  <img loading="lazy" src="product.webp">
+                </div>
+                <form method="POST" id="toform" class="al-form" action="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/api.php" style="position: relative;">
+                  <input type="hidden" name="sub1" value="160pjgg1ve6rg">
+                  <input type="hidden" name="fbp" value="984377889508525">
+                  <div class="prices">
+                    <div class="old">
+                      <s> 78 ευρώ </s>
+                    </div>
+                    <div class="new">39 ευρώ</div>
+                  </div>
+                  <input name="name" placeholder="Το όνομα σας " minlength="2" type="text" required="required" value="">
+                  <input name="phone" placeholder="Αριθμός τηλεφώνου" type="tel" minlength="8" maxlength="18" required="required" value="">
+                  <button type="submit" class="btn">Σειρά</button>
+                </form>
+              </div>
+              <div class="spin-result-wrapper">
+                <div class="pop-up-window">
+                  <div class="close-popup"></div>
+                  <h1 class="popup-title">Συγχαρητήρια!</h1>
+                  <p class="ruletka-p pop-up-text">
+                    Μπορείτε να λάβετε την Ostyhealth με
+                    <span class="danger-text"><span class="new_price_val">39</span> <span class="price_cur">ευρώ</span> !</span>
+                  </p>
+                  <a class="pop-up-button" href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Еντάξει</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </center>
+        <h1 class="comm">ΣΧΟΛΙΑ:</h1>
+        <div class="comments">
+          <div class="comment">
+            <img loading="lazy" src="image34.webp" class="ava">
+            <p>
+              <b> Νίνα </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-7, true)
+              </script>14.03.2024
+            </p>
+            <p>
+              Είναι ένα θαυματουργό προϊόν!!! Θέλω να το αγοράσω κι εγώ, θέλω πολύ να αποκαταστήσω τις αρθρώσεις μου και
+              να κάνω πεζοπορία στα βουνά!
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image35.webp" class="ava">
+            <p>
+              <b> Ρένος </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-7, true)
+              </script>14.03.2024
+            </p>
+            <p>
+              Αφού έπαθα μια σοβαρή μολυσματική ασθένεια, παρατήρησα ότι το χέρι μου άρχισε να πρήζεται τρομερά. Με
+              ενόχλησε πολύ και πήγα σε ειδικό. Η εξέταση έδειξε ότι πάσχω από τοξική-αλλεργική αρθρίτιδα. Για να είμαι
+              ειλικρινής, είναι η πρώτη φορά που ακούω για αυτή την ασθένεια. Όπως αποδείχθηκε, αναπτύχθηκε λόγω
+              μεταβολικής διαταραχής στο φόντο μιας λοίμωξης. Και τότε σκέφτηκα ότι θα μείνω με την παλάμη του χεριού
+              μου για το υπόλοιπο της ζωής μου. Ήμουν πολύ αναστατωμένος .. Η γυναίκα μου με ενθάρρυνε, φυσικά, ότι
+              μπορούσαμε να το χειριστούμε αυτό. Κάπου σε κάποιο φόρουμ βρήκα ένα άρθρο για αυτή
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">την Ostyhealth</a> , την παρήγγειλα, ήθελα να δοκιμάσω. Δεν μπορώ να εκφράσω αυτό που
+              μου έκανε με λόγια! Είναι κάπως μαγικό, δεν ξέρω πώς να το περιγράψω... Αυτό το προϊόν με βοήθησε, και
+              κυριολεκτικά μετά την πρώτη χρήση. Είμαι πολύ χαρούμενος που το χέρι μου φαίνεται πάλι υγιές, μπορώ να το
+              κινήσω κανονικά! Θέλω να μοιραστώ το αποτέλεσμά μου:
+            </p>
+            <img loading="lazy" src="image36.webp" class="comm-img">
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image37.webp" class="ava">
+            <p>
+              <b> Αικατερίνη </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-7, true)
+              </script>14.03.2024
+            </p>
+            <p>
+              Όταν άρχισα να χρησιμοποιώ την κρέμα Ostyhealth, είχα ήδη δευτεροπαθή οστεοαρθρίτιδα γόνατος. Συνεχής
+              ενόχληση, περιοδικός πόνος, περιστασιακά οίδημα. Μετά από 5 ημέρες, παρατήρησα σημαντικές βελτιώσεις.
+              Σταδιακά, όχι μόνο το γόνατό μου σταμάτησε να με ενοχλεί, μπορούσα να κινηθώ. Έκανα 6 μήνες προληπτική
+              θεραπεία κατόπιν συμβουλής ειδικού. Δεν έχει παρενέργειες και ταιριάζει καλά και με άλλα φάρμακα.
+            </p>
+            <img loading="lazy" src="image38.webp" class="comm-img">
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image39.webp" class="ava">
+            <p>
+              <b> Γιαννούλα </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-6, true)
+              </script>15.03.2024
+            </p>
+            <p>
+              Δυστυχώς, κληρονόμησα τα οστά (εξογκώματα) στα πόδια μου. Προηγουμένως δεν έδινα σημασία, δεν με
+              ενοχλούσαν πολύ. Όμως πριν από 2 χρόνια, όταν έκλεισα τα 46, άρχισαν να με ενοχλούν. Τα πόδια ήταν πολύ
+              κουρασμένα, τα κόκαλα κοκκίνισαν, πονούσαν τρομερά. Ήταν αδύνατο να αντέξω, αποφάσισα να προσπαθήσω να
+              θεραπεύσω τα πόδια μου με λαϊκές θεραπείες. Κατά τη διάρκεια των έξι μηνών, δοκίμασα ό,τι ήταν δυνατό,
+              αλλά χωρίς αποτέλεσμα. Βρήκα πληροφορίες ότι είναι δυνατή η αφαίρεση οστών με τη βοήθεια της
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> . Έχω διαβάσει πολλές κριτικές για αυτό το προϊόν. Ήταν τρομακτικό,
+              αλλά το έκανα πάντως. Σε γενικές γραμμές, το προϊόν είναι ικανοποιητικό! Δεν μετανιώνω που το παρήγγειλα.
+              Παρεμπιπτόντως, ένα μήνα μετά άρχισα να φοράω πάλι τακούνια, 7εκ. Τα πόδια μου δεν είναι τόσο κουρασμένα
+              όσο παλιά όταν υπήρχαν κόκαλα. Μετά από 2 μήνες, τα πόδια μου μοιάζουν με αυτό:
+            </p>
+            <img loading="lazy" src="image40.webp" class="comm-img b-lazy">
+          </div>
+
+          <div class="comment">
+            <img loading="lazy" src="image41.webp" class="ava b-lazy">
+            <p>
+              <b> Δώρα </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-6, true)
+              </script>15.03.2024
+            </p>
+            <p>
+              Τους τελευταίους έξι μήνες, η μητέρα μου άρχισε να ανησυχεί πολύ για τον πόνο στις αρθρώσεις της, ειδικά
+              στα χέρια και τα γόνατά της. Πρήζονται, δεν μπορεί να περπατήσει ή να κάνει τίποτα με τα χέρια της, τα
+              δάχτυλά της δύσκολα λυγίζουν. Πριν από 6 χρόνια διαγνώστηκε με ρευματοειδή αρθρίτιδα και αρχικά λάμβανε
+              θεραπεία δύο φορές το χρόνο. Υπήρχαν στιγμές που δεν παραπονιόταν για τίποτα. Όμως κάθε χρόνο η κατάσταση
+              γινόταν όλο και χειρότερη. Αυτό ήταν ιδιαίτερα εμφανές κατά την περίοδο του φθινοπώρου-αρχές του χειμώνα.
+              Και χρόνο με τον χρόνο οι παροξύνσεις γίνονταν όλο και πιο δύσκολες. Κάποτε έπρεπε. Έπρεπε να πάει στον
+              θεράποντα ιατρό της. Ο οποίος την έστειλε στον ρευματολόγο. Αυτή τη φορά όμως τα πράγματα ήταν πολύ πιο
+              δύσκολα. Το πρήξιμο στις αρθρώσεις δεν υποχώρησε, οι πόνοι ήταν σταθεροί, υποχώρησαν μόνο λίγο μετά τις
+              ενέσεις και τα χάπια. Όλες οι αρθρώσεις έγιναν κόκκινες, από τις αλοιφές των φαρμακείων η κοκκινίλα μόνο
+              εντάθηκε. Αλλά ακόμα πιο σοβαρό ήταν το γεγονός ότι η μητέρα μου δεν μπορούσε να ακολουθήσει ολόκληρη την
+              θεραπεία. Το στομάχι της την πονούσε, το συκώτι της άρχισε να την ενοχλεί. Έπρεπε να σταματήσει τα χάπια
+              και τις ενέσεις. Και η κατάσταση των αρθρώσεων επιδεινώθηκε ακόμη περισσότερο. Αποφασίσαμε να αναζητήσουμε
+              μια εναλλακτική θεραπεία από αυτή που έχει συνταγογραφήσει ο ρευματολόγος. Έτσι παραγγείλαμε
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">την Ostyhealth</a>
+              . Και δεν το μετανιώσαμε. Τρεις μήνες αργότερα, η μητέρα μου είχε μια βελτίωση που δεν είχε παρατηρηθεί
+              εδώ και πολύ καιρό με τη συμβατική θεραπεία. Τώρα η μητέρα μου συνεχίζει τη θεραπεία.
+              <br><br>
+              <img loading="lazy" src="image42.webp" alt="" style="max-width: 350px; width: 100%" class="b-lazy">
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image43.webp" class="ava b-lazy">
+            <p>
+              <b> Τηλέμαχος </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-6, true)
+              </script>15.03.2024
+            </p>
+            <p>
+              Καταπληκτικά αποτελέσματα! Πρέπει να αγοράσω κι εγώ το προϊόν αυτό. Πού είναι το καλύτερο μέρος για
+              παραγγελία;
+            </p>
+          </div>
+
+          <div class="comment">
+            <img loading="lazy" src="image44.webp" class="ava b-lazy">
+            <p>
+              <b> Σέργιος </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-6, true)
+              </script>15.03.2024
+            </p>
+            <p>
+              Υπάρχει σύνδεσμος για παραγγελία κάτω από τα σχόλια. Τώρα έχουν μια προσφορά, μπορείτε να παραγγείλετε με
+              έκπτωση 50%.
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image45.webp" class="ava b-lazy">
+            <p>
+              <b> Κωστής </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-5, true)
+              </script>16.03.2024
+            </p>
+            <p>
+              Πριν από ένα χρόνο έσπασα το πόδι μου σε ένα άλμα με αλεξίπτωτο, με πήγαν στις πρώτες βοήθειες, μου είπαν
+              ότι υπήρχαν προβλήματα με τους συνδέσμους αλλά δεν ήταν τίποτα σοβαρό. Αλλά μετά τον τραυματισμό, το
+              γόνατό μου με πονούσε συνέχεια, δεν μπορούσα να αθληθώ κανονικά, μετά έκανα μαγνητική τομογραφία, στην
+              οποία βρήκαν ένα μελανιασμένο γόνατο. Βρήκα αυτόν τον ιστότοπο στο διαδίκτυο, άφησα ένα αίτημα για
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">την Ostyhealth</a> . Παραδόθηκε σε λίγες μέρες και άρχισα αμέσως να το χρησιμοποιώ.
+              Εδώ και τρεις μήνες, χρησιμοποιώ το προϊόν <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> για πρόληψη. Το πόδι
+              λειτουργεί κανονικά, αυξάνοντας σταδιακά το φορτίο.
+            </p>
+            <img loading="lazy" src="image46.webp" class="comm-img b-lazy">
+          </div>
+
+          <div class="comment">
+            <img loading="lazy" src="image47.webp" class="ava b-lazy">
+            <p>
+              <b> Πάολα </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-5, true)
+              </script>16.03.2024
+            </p>
+            <p>
+              Λοιπόν, τι περιμένετε; Παραγγείλετε και ξεκινήστε τη θεραπεία με <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">την Ostyhealth</a> !
+              Δεδομένου ότι δίνουν μια προσφορά, μπορείτε να την δοκιμάσετε πριν αγοράσετε οποιαδήποτε θεραπεία για να
+              είστε σίγουροι. <br><br>
+              <img loading="lazy" src="image48.webp" alt="" style="max-width: 350px; width: 100%" class="b-lazy">
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image49.webp" class="ava b-lazy">
+            <p>
+              <b> Αντώνης </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-5, true)
+              </script>16.03.2024
+            </p>
+            <p>
+              Δοκίμασα άλλες μάρκες, θεραπείες και ενέσεις, λειτούργησαν αλλά μόνο για λίγο και τελικά ο πόνος επανήλθε
+              ξανά. Μου κόστισε πολλά χρήματα, χρόνο και κόπο. Αλλά με <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">την Ostyhealth</a> , ο πόνος
+              στις αρθρώσεις εξαφανίστηκε γρήγορα και δεν επανέρχεται. Τα γόνατα δεν τρίζουν πια. Πρώτα παρήγγειλα ένα
+              δείγμα με έκπτωση και από την πρώτη μέρα κατάλαβα ότι αυτό το προϊόν λειτουργεί πραγματικά. Στη συνέχεια
+              παρήγγειλα την πλήρη θεραπεία που ήταν πολύ βολική. Όλοι πρέπει να προσπαθήσουν.
+            </p>
+          </div>
+
+          <div class="comment">
+            <img loading="lazy" src="image50.webp" class="ava b-lazy">
+            <p>
+              <b> ´Ερικα </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-5, true)
+              </script>16.03.2024
+            </p>
+            <p>
+              Το αγόρασα ήδη. Χαμηλή τιμή, γρήγορη παράδοση. Δείτε το αποτέλεσμα μου. φωτογραφία πριν / φωτογραφία μετά
+            </p>
+            <img loading="lazy" src="image51.webp" class="comm-img b-lazy">
+            <div class="comment ans">
+              <img loading="lazy" src="image52.webp" class="ava b-lazy">
+              <p>
+                <b> Λητώ </b>
+              </p>
+              <p class="comm-date">
+                <script type="text/javascript">
+                  dtime_nums(-5, true)
+                </script>16.03.2024
+              </p>
+              <p>Υπέροχο αποτέλεσμα!</p>
+            </div>
+            <div class="comment ans">
+              <img loading="lazy" src="image53.webp" class="ava b-lazy">
+              <p>
+                <b> Σοφία </b>
+              </p>
+              <p class="comm-date">
+                <script type="text/javascript">
+                  dtime_nums(-4, true)
+                </script>17.03.2024
+              </p>
+              <p>
+                Οι πιο σημαντικές αλλαγές συμβαίνουν μέσα σας. Πρώτα βελτιώνετε τη σωματική σας υγεία και μετά τη
+                συναισθηματική σας υγεία, νιώθετε πιο ευτυχισμένοι από ποτέ!
+              </p>
+            </div>
+            <div class="comment ans">
+              <img loading="lazy" src="image54.webp" class="ava b-lazy">
+              <p>
+                <b> Νίκη </b>
+              </p>
+              <p class="comm-date">
+                <script type="text/javascript">
+                  dtime_nums(-4, true)
+                </script>17.03.2024
+              </p>
+              <p>
+                Συμφωνώ απόλυτα! Από τότε που άρχισα να χρησιμοποιώ αυτό το προϊόν, ο σύζυγός μου και εγώ είμαστε στο
+                δεύτερο μήνα του μέλιτος, κάνοντας σεξ πριν από περισσότερα από 20 χρόνια! Το καλύτερο πράγμα για αυτό
+                το προϊόν είναι ότι οι αρθρώσεις επουλώνονται αβίαστα, είναι τόσο εύκολο και βολικό!
+              </p>
+            </div>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image55.webp" class="ava b-lazy">
+            <p>
+              <b> Λίζα </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-4, true)
+              </script>17.03.2024
+            </p>
+            <p>
+              Το καλοκαίρι τα τακούνια είναι λίγο πολύ φυσιολογικά, αφού φοράω ανοιχτά παπούτσια για να μην με ενοχλεί
+              τίποτα. Από το φθινόπωρο μέχρι την άνοιξη, οι αρθρώσεις γίνονται όλο και πιο φλεγμονώδεις. Και ακόμα κι αν
+              τα παπούτσια δεν είναι στενά, δεν γίνονται καλύτερα. Πάντα είχα προβλήματα με τα δάχτυλα των ποδιών μου.
+              Τυχόν νέα παπούτσια ή αλλαγές παπουτσιών για την εποχή οδηγούν σε φλεγμονή των εξογκωμάτων και δημιουργία
+              μεγάλων, επώδυνων κάλων. Δεν νομίζω ότι αυτό το προϊόν θα με βοηθήσει
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image56.webp" class="ava b-lazy">
+            <p>
+              <b> Σωτήρης </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-3, true)
+              </script>18.03.2024
+            </p>
+            <p>
+              Επιβεβαιώνω! Αυτή η <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> λειτουργεί πολύ καλά με την οποιαδήποτε ασθένεια
+              των αρθρώσεων. Από τις πρώτες μέρες είναι ξεκάθαρο ότι το προϊόν λειτουργεί. Μπορώ να παίξω ξανά με τον
+              αγαπημένο μου ανιψιό.
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image57.webp" class="ava b-lazy">
+            <p>
+              <b> Ελεονόρα </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-3, true)
+              </script>18.03.2024
+            </p>
+            <p>
+              Απίστευτο! Λεόντειε, είσαι πολύ καλός στο να ενημερώνεις τους ανθρώπους για μια τέτοια θεραπεία. Το
+              πρόβλημα, δυστυχώς, είναι σημαντικό για πολλούς ...
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image58.webp" class="ava b-lazy">
+            <p>
+              <b> Λιάνα </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-2, true)
+              </script>19.03.2024
+            </p>
+            <p>Είμαι 53χρονών, πιστεύετε ότι αυτό το προϊόν θα βοηθήσει στην ηλικία μου με την αρθρίτιδα;</p>
+            <div class="comment ans">
+              <img loading="lazy" src="image59.webp" class="ava b-lazy">
+              <p>
+                <b> Νικολέττα </b>
+              </p>
+              <p class="comm-date">
+                <script type="text/javascript">
+                  dtime_nums(-2, true)
+                </script>19.03.2024
+              </p>
+              <p>
+                Αξίζει μια προσπάθεια. Εν πάσι περίπτωση, αυτό το προϊόν, είναι ασυζητητί, το καλύτερο από όλα τα
+                προϊόντα που έχω δοκιμάσει ποτέ.
+              </p>
+            </div>
+          </div>
+
+          <div class="comment">
+            <img loading="lazy" src="image60.webp" class="ava b-lazy">
+            <p>
+              <b> Αντώνης </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-2, true)
+              </script>19.03.2024
+            </p>
+            <p>
+              Για 2 χρόνια έπαιρνα χάπια για την αρθρίτιδα: για την καταστολή του ανοσοποιητικού συστήματος, έκανα την
+              κρύα θεραπεία μείον 160, δεν είχε όμως κανένα νόημα. Δεν μπορούσα να περάσω μια μέρα χωρίς παυσίπονα, όλες
+              μου οι αρθρώσεις ήταν παραμορφωμένες. Δεν έχω ολοκληρώσει ακόμη τη θεραπεία με
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">την Ostyhealth</a> . Αφού χρησιμοποίησα την κρέμα αυτή 4 φορές η ασθένεια άρχισε να
+              υποχωρεί. Ζω χωρίς χάπια, σε άριστη κατάσταση, γεμάτος ενέργεια.
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image61.webp" class="ava b-lazy">
+            <p>
+              <b> Μαριλένα </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-2, true)
+              </script>19.03.2024
+            </p>
+            <p>
+              Η γιαγιά μου έχει αρθροπάθεια της άρθρωσης του γόνατος και οι γιατροί της συνέταξαν τη θεραπεία με φάρμακα
+              που της αντενδείκνυνται αυστηρά. Για αυτό ακριβώς το λόγο, απευθυνθήκαμε σε έναν κορυφαίο ειδικό στον
+              τομέα της θεραπείας των αρθρώσεων για βοήθεια. Συμβούλεψε <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">την Ostyhealth</a> και
+              εξήγησε ότι αυτό το προϊόν έχει πιο ευαίσθητα συστατικά και το αποτέλεσμα είναι καλύτερο και πιο σταθερό.
+              Στην αρχή με εξέπληξε η τιμή, σκέφτηκα ότι για μια τόσο φθηνή τιμή δεν μπορεί να υπάρξει σούπερ θεραπεία,
+              αλλά η γιαγιά.μου επέμενε να το παραγγείλει ,άλλωστε δεν είχαμε να χάσουμε και τίποτε. Όταν πήραμε το
+              πακέτο και η γιαγιά μου άρχισε να το χρησιμοποιεί, κατάλαβα πόσο λάθος έκανα.
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Н Ostyhealth</a>την βοήθησε πραγματικά πολύ, ο πόνος πέρασε, το πρήξιμο μειώθηκε. Και
+              αυτό είναι μόνο μετά από 3 ημέρες χρήσης.
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image62.webp" class="ava b-lazy">
+            <p>
+              <b> Ολίβια </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-2, true)
+              </script>19.03.2024
+            </p>
+            <p>
+              Καταπληκτική κρέμα! Μου άρεσε που υπάρχει προώθηση. Αν για κάποιο λόγο δεν σας αρέσει, δεν θα σας κοστίσει
+              τίποτα. Μοιράζομαι την πρόοδό μου.
+            </p>
+            <img loading="lazy" src="image63.webp" class="comm-img b-lazy">
+
+            <div class="comment ans">
+              <img loading="lazy" src="image64.webp" class="ava b-lazy">
+              <p>
+                <b> Νικόλαος </b>
+              </p>
+              <p class="comm-date">
+                <script type="text/javascript">
+                  dtime_nums(-2, true)
+                </script>19.03.2024
+              </p>
+              <p>Πόσο καιρό σου πήρε;</p>
+            </div>
+            <div class="comment ans">
+              <img loading="lazy" src="image65.webp" class="ava b-lazy">
+              <p>
+                <b> Ολίβια </b>
+              </p>
+              <p class="comm-date">
+                <script type="text/javascript">
+                  dtime_nums(-2, true)
+                </script>19.03.2024
+              </p>
+              <p>Περίπου 10 μέρες</p>
+            </div>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image66.webp" class="ava b-lazy">
+            <p>
+              <b> Ελενίτσα </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-2, true)
+              </script>19.03.2024
+            </p>
+            <p>
+              Δεν μπορώ καν να πιστέψω ότι στην Ελλάδα είναι επιτέλους δυνατή η παραγγελία
+              <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">της Ostyhealth</a> και μάλιστα με έκπτωση!
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image67.webp" class="ava b-lazy">
+            <p>
+              <b> Γεωργία </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-2, true)
+              </script>19.03.2024
+            </p>
+            <p>
+              Αυτό δεν είναι ασθένεια, αλλά ένα είδος βασανιστηρίου. Η δουλειά μιας φίλης μου όλη μέρα συνδέεται με
+              συνεχόμενη ορθοστασία και αυτό της δημιούργησε προβλήματα. Μετά από συμβουλή φίλων, πήγαμε στην κλινική. Η
+              διάγνωση τέθηκε: αρθροπάθεια του ποδιού. Στην αρχή φοβήθηκε, αλλά στη συνέχεια ο ειδικός την καθησύχασε
+              ότι δεν χάθηκαν όλα και τη συμβούλεψε να ακολουθήσει τη θεραπεία <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> . Το
+              αποτέλεσμα φάνηκε μετά τις πρώτες μέρες χρησιμοποίησης του προϊόντος. Τουλάχιστον άρχισε να περπατάει
+              καλύτερα, δεν ανησυχεί πια για τον πόνο. Είναι ικανοποιημένη από τη θεραπεία. <br><br>
+              <img loading="lazy" src="image68.webp" alt="" style="max-width: 350px; width: 100%" class="b-lazy">
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image69.webp" class="ava b-lazy">
+            <p>
+              <b> Ρογήρος </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-2, true)
+              </script>19.03.2024
+            </p>
+            <p>
+              Υπέροχο προϊόν. Είναι χρήσιμο να διαβάσετε αυτό το άρθρο πριν από την επέμβαση του μηνίσκου. Το ιστορικό
+              μου της νόσου ήταν πολύ μετά τον τραυματισμό, είχα μυϊκή ατροφία και επίσης κάποιες ακατανόητες αισθήσεις
+              στην άρθρωση.
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image70.webp" class="ava b-lazy">
+            <p>
+              <b> Ρίτα </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-2, true)
+              </script>19.03.2024
+            </p>
+            <p>
+              Είμαι τόσο χαρούμενη που βρήκα αυτή την <a href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">Ostyhealth</a> ! Η ποιότητα της ζωής μου έχει
+              βελτιωθεί πάρα πολύ. Είμαι και πάλι χαρούμενη γυναίκα... ευχαριστώ!
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image71.webp" class="ava b-lazy">
+            <p>
+              <b> Τίνα </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-2, true)
+              </script>19.03.2024
+            </p>
+            <p>
+              Με αυτό το προϊόν άρχισα να νιώθω σαν να ήμουν 30 ετών. Τρέχω, παίζω πολύ με τα εγγόνια μου, ξανακάνω
+              ποδήλατο και είμαι 53)))
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image72.webp" class="ava b-lazy">
+            <p>
+              <b> Ορέστης </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-2, true)
+              </script>19.03.2024
+            </p>
+            <p>
+              Τόσο η γυναίκα μου όσο και εγώ ολοκληρώσαμε τη θεραπεία και θεραπεύσαμε τις αρθρώσεις μας χωρίς
+              χειρουργική επέμβαση, ακριβές αλοιφές και θεραπείες. Αυτό το προϊόν είναι εξαιρετικό και πολύ εύκολο στη
+              χρήση.
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image73.webp" class="ava b-lazy">
+            <p>
+              <b> Στέφανος </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-1, true)
+              </script>20.03.2024
+            </p>
+            <p>
+              Τραυματίστηκα στην πίστα του σκι για δεύτερη φορά. Οι τοπικοί ειδικοί είπαν ότι επρόκειτο για εξάρθρωση, η
+              μαγνητική τομογραφία επιβεβαίωσε τη διάγνωση. Ήμουν τυχερός γιατί αυτό το προϊόν μου το σύστησαν αμέσως.
+              Στην αρχή ήμουν διστακτικός γιατί η τιμή μου φαινόταν χαμηλή, αλλά ο γιατρός με έπεισε ότι θα βοηθούσε.
+              Και πίστεψα, το παρήγγειλα, το προϊόν μου παραδόθηκε γρήγορα. Όλα πολύ απλά και ξεκάθαρα. Σαν αποτέλεσμα,
+              σε ένα μήνα θα επιστρέψω στο snowboard και το ποδήλατο. Δεν έχω άλλο πόνο ή ενόχληση.
+            </p>
+            <img loading="lazy" src="image74.webp" class="comm-img b-lazy">
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image75.webp" class="ava b-lazy">
+            <p>
+              <b> Τόνια </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-1, true)
+              </script>20.03.2024
+            </p>
+            <p>
+              Σήμερα όλοι μπορούν να έχουν ένα υγιές σώμα και να μην αισθάνονται πόνο στις αρθρώσεις, όχι μόνο λίγοι
+              άνθρωποι με καλή γενετική και πολλά χρήματα.
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image76.webp" class="ava b-lazy">
+            <p>
+              <b> Τόλης </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-1, true)
+              </script>20.03.2024
+            </p>
+            <p>
+              Μου πήρε μόνο 7 ημέρες για να ανακτήσω την κινητικότητα στα κάτω άκρα μου. Η πιο γρήγορη θεραπεία για τις
+              αρθρώσεις.
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image77.webp" class="ava b-lazy">
+            <p>
+              <b> Ανδρεανή </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-1, true)
+              </script>20.03.2024
+            </p>
+            <p>
+              Το χρησιμοποιώ εδώ και μερικές εβδομάδες και ήδη βλέπω αποτελέσματα. Διάγνωση - αρθρώσεις δακτύλων. Ο
+              πόνος μειώνεται, η κινητικότητα αυξάνεται, η γενική κατάσταση είναι καλύτερη. Σίγουρα θα αφήσω μια κριτική
+              όταν τελειώσω τη θεραπεία.
+            </p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image78.webp" class="ava b-lazy">
+            <p>
+              <b> Ιωάννα </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-1, true)
+              </script>20.03.2024
+            </p>
+            <p>Είναι τόσο απλό, το μόνο που έχετε να κάνετε είναι να χρησιμοποιείτε την κρέμα 2 φορές την ημέρα.</p>
+          </div>
+          <div class="comment">
+            <img loading="lazy" src="image79.webp" class="ava b-lazy">
+            <p>
+              <b> Γαβριέλλα </b>
+            </p>
+            <p class="comm-date">
+              <script type="text/javascript">
+                dtime_nums(-1, true)
+              </script>20.03.2024
+            </p>
+            <p>
+              Παραγγείλετε μερικές συσκευασίες με έκπτωση και θα καταλάβετε αμέσως για τι πράγμα μιλάμε: τον πιο
+              αξιόπιστο και ακίνδυνο τρόπο!
+            </p>
+          </div>
+        </div>
+        <a class="button" href="https://tv.esshubx.click/lander/ostyhealth-gr-7_1701805663/index.php#goToForm" onclick="document.location.hash='goToForm';return false;">ΠΑΡΑΓΓΕΛΊΑ</a>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll('a').forEach(a => (a.href.match('cert.pdf') ? null : (a.href = '#goToForm')))
+      $(document).ready(function () {
+        $("a[href^='#']").on('click', function (e) {
+          var anchor = $(this)
+          $('html, body')
+            .stop()
+            .animate(
+              {
+                scrollTop: $(anchor.attr('href')).offset().top
+              },
+              777
+            )
+          e.preventDefault()
+          return false
+        })
+      })
+    </script>
+
+    <script src="doors.js"></script>
+    <script src="tl-validator.js"></script>
+  
+
+<iframe id="frame" name="frame" src="index_1.html#0#1" style="width: 100%; height: 100vh; position: fixed; top: 0px; left: 0px; border: none; z-index: 999997; display: none; background-color: rgb(255, 255, 255);"></iframe><style>			.validator__tooltip { 				position: absolute; 				z-index: 700; 				display: block; 				font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; 				font-style: normal; 				font-weight: 400; 				letter-spacing: normal; 				line-break: auto; 				line-height: 1.5; 				text-align: left; 				text-align: start; 				text-decoration: none; 				text-shadow: none; 				text-transform: none; 				white-space: normal; 				word-break: normal; 				word-spacing: normal; 				font-size: 14px; 				word-wrap: break-word; 				opacity: 1; 				padding-bottom: 5px; 				pointer-events: none 			} 			.input-wrapper .error+label {				pointer-events: none;			} 			.validator__tooltip-inner { 				max-width: 290px; 				padding: 3px 8px; 				color: #fff; 				text-align: center; 				background-color: #cd5b20; 				border-radius: 4px; 			} 			.validator__tooltip-inner::before { 				position: absolute; 				width: 0; 				height: 0; 				border-color: transparent; 				border-style: solid; 				bottom: 1px; 				left: 50%; 				margin-left: -5px; 				content: ""; 				border-width: 5px 5px 0; 				border-top-color: #cd5b20; 			}</style></body></html>
