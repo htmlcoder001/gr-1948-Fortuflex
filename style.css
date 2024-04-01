@@ -80,7 +80,6 @@ p {
   position: relative;
   padding: 0 7px;
   display: inline-block;
-  text-transform: uppercase;
   color: #000000;
 }
 
@@ -546,7 +545,7 @@ html {
 }
 
 .form .img img {
-  width: 180px;
+  width: 280px;
   display: block;
   margin: 0 auto;
 }
