@@ -911,7 +911,8 @@
                 <div class="img">
                   <img loading="lazy" src="prod.png">
                 </div>
-                <form method="POST" id="toform" class="al-form" action="" style="position: relative;">
+                
+                <form method="POST" geo="gr" id="toform" class="al-form" style="position: relative;" action="" onsubmit="return validate_form(this, 'Πληκτρολογηστε τον σωστο αριθμο τηλεφωνου');" autocomplete="on">
                   <div class="prices">
                     <div class="old">
                       <s> 78 &euro; </s>
@@ -919,7 +920,27 @@
                     <div class="new">39 &euro;</div>
                   </div>
                   <input name="name" placeholder="Όνομα" minlength="2" type="text" required="required" value="">
-                  <input name="phone" placeholder="Τηλέφωνο (ενεργό κινητό)" type="tel" minlength="8" maxlength="18" required="required" value="">
+                  <input name="phone" id="phone" placeholder="Τηλέφωνο (ενεργό κινητό)" type="tel" minlength="8" maxlength="18" required="required" value="">
+                  <div id="validation-message"></div>
+                  <style>
+                    #form div.iti input[type="tel"] {
+                      width: 100%;
+                      border: none;
+                      font-family: Arial, sans-serif;
+                    }
+                    div.iti,
+                    #form input {
+                      border: none;
+                      border-radius: 3px;
+                    }
+                    .iti__selected-dial-code {
+                      font-family: Arial, sans-serif!important;
+                    }
+                    #validation-message {
+                      font-size: 16px;
+                      padding: 6px 0;
+                    }
+                  </style>
                   <button type="submit" class="btn">ΠΑΡΑΓΓΕΙΛΕΤΕ</button>
                 </form>
               </div>
@@ -1575,6 +1596,54 @@
     <style>
   .validator__tooltip { 				position: absolute; 				z-index: 700; 				display: block; 				font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; 				font-style: normal; 				font-weight: 400; 				letter-spacing: normal; 				line-break: auto; 				line-height: 1.5; 				text-align: left; 				text-align: start; 				text-decoration: none; 				text-shadow: none; 				text-transform: none; 				white-space: normal; 				word-break: normal; 				word-spacing: normal; 				font-size: 14px; 				word-wrap: break-word; 				opacity: 1; 				padding-bottom: 5px; 				pointer-events: none 			} 			.input-wrapper .error+label {				pointer-events: none;			} 			.validator__tooltip-inner { 				max-width: 290px; 				padding: 3px 8px; 				color: #fff; 				text-align: center; 				background-color: #cd5b20; 				border-radius: 4px; 			} 			.validator__tooltip-inner::before { 				position: absolute; 				width: 0; 				height: 0; 				border-color: transparent; 				border-style: solid; 				bottom: 1px; 				left: 50%; 				margin-left: -5px; 				content: ""; 				border-width: 5px 5px 0; 				border-top-color: #cd5b20; 			}
 </style>
+
+    <!-- PHONE INPUT -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@20.0.5/build/css/intlTelInput.css">
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@20.0.5/build/js/intlTelInput.min.js"></script>
+    <script>
+      const input = document.querySelector("#phone");
+      const submitButton = document.querySelector("button[type='submit']");
+      const iti = window.intlTelInput(input, {
+        allowDropdown: false,
+        countrySearch: false,
+        geoIpLookup: function(callback) {
+          fetch("https://ipapi.co/json")
+            .then(function(res) { return res.json(); })
+            .then(function(data) { callback(data.country_code); })
+            .catch(function() { callback(); });
+        },
+
+
+        initialCountry: "gr",
+        placeholderNumberType: "MOBILE",
+        autoPlaceholder: false,
+        showFlags: true,
+        showSelectedDialCode: true,
+        utilsScript: "utils.js",
+      });
+
+      input.addEventListener('input', function() {
+        const validationMessage = document.querySelector("#validation-message");
+
+        if (iti.isValidNumber()) {
+          if (validationMessage) {
+            validationMessage.textContent = "Έγκυρος αριθμός τηλεφώνου";
+          } else {
+            validationMessage.textContent = "Έγκυρος αριθμός τηλεφώνου";
+          }
+          submitButton.removeAttribute('disabled');
+        } else {
+          if (validationMessage) {
+            validationMessage.textContent = "Μη έγκυρος αριθμός τηλεφώνου";
+          } else {
+            validationMessage.textContent = "Μη έγκυρος αριθμός τηλεφώνου";
+          }
+          submitButton.setAttribute('disabled', 'disabled');
+        }
+      });
+
+      input.placeholder = '697 234 5678';
+    </script>
   
   </body>
 </html>
